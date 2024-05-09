@@ -9,7 +9,7 @@ function App() {
     const [shoppingList, setShoppingList] = useState([]);
 
     function loadData() {
-        fetch("https://qr3zd2-8080.csb.app/api/list")
+        fetch("https://9zdppw-8080.csb.app/api/list")
             .then((x) => x.json())
             .then((response) => {
                 setShoppingList(response);
@@ -19,7 +19,7 @@ function App() {
     useEffect(loadData, []);
 
     function addItem(item, quantity) {
-        fetch("https://qr3zd2-8080.csb.app/api/list/new", {
+        fetch("https://9zdppw-8080.csb.app/api/list/new", {
             method: "POST",
             body: JSON.stringify({ item, quantity }),
             headers: {
@@ -32,7 +32,7 @@ function App() {
     }
 
     function deleteItem(id) {
-        fetch("https://qr3zd2-8080.csb.app/api/list/" + id, {
+        fetch("https://9zdppw-8080.csb.app/api/list/" + id, {
             method: "DELETE",
             headers: {
                 "Content-type": "application/json; charset=UTF-8",
