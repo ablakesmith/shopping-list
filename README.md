@@ -1,9 +1,9 @@
-## Shopping List
+# Shopping List
 
-# GitHub Pages
+## GitHub Pages
     - https://ablakesmith.github.io/shopping-list/
 
-# User Story
+## User Story
 As a student
 I want to explore the functionality of the shopping list application. 
 So that I can understand how React components are utilized to create interactive user interfaces and to gain insights into modern frontend development practices.
