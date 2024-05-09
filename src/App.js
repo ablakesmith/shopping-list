@@ -1,5 +1,6 @@
 
 import "./App.css";
+import "./index.css";
 import React, { useState, useEffect } from "react";
 import ShoppingForm from "./Components/ShoppingForm/ShoppingForm";
 import ShoppingList from "./Components/ShoppingList/ShoppingList";
