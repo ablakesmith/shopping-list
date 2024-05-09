@@ -10,7 +10,7 @@ function ShoppingItem({ id, item, quantity, deleteItem}) {
     return (
         <li>
             <span>{item} ({quantity})</span> 
-            <button onClick={handleDelete}>Delete</button>
+            <button className="delete-button" onClick={() => deleteItem(item.id)}>Delete</button>
         </li>
     );
 }

@@ -1,5 +1,7 @@
-/* App component styles */
+/* Updated styles for App component with notebook paper effect */
 .App {
-  text-align: center;
-  color: blue; /* New style added */
+  text-align: left; /* Align text to the left for a handwritten note effect */
+  color: #333; /* Dark gray text color */
+  background-color: #fff; /* White background inside the notebook */
+  padding: 20px; /* Add padding inside the notebook */
 }

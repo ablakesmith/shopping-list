@@ -1,13 +1,30 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f0f0f0; /* Light gray paper background */
+  padding: 20px; /* Add some padding around the content */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.notebook {
+  background-color: #fff; /* White notebook paper */
+  border: 1px solid #d9d9d9; /* Light gray border */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 20px; /* Add padding inside the notebook */
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center the notebook */
+}
+
+h1 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Dark gray color for headings */
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.delete-button {
+  margin: 4px 5px; /* Add padding around the delete button */
 }
