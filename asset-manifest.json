@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "//ablakesmith.github.io/shopping-list/static/css/main.964fdded.css",
-    "main.js": "//ablakesmith.github.io/shopping-list/static/js/main.02812822.js",
-    "index.html": "//ablakesmith.github.io/shopping-list/index.html",
-    "main.964fdded.css.map": "//ablakesmith.github.io/shopping-list/static/css/main.964fdded.css.map",
-    "main.02812822.js.map": "//ablakesmith.github.io/shopping-list/static/js/main.02812822.js.map"
+    "main.css": "/shopping-list/static/css/main.0c664528.css",
+    "main.js": "/shopping-list/static/js/main.b0251240.js",
+    "index.html": "/shopping-list/index.html",
+    "main.0c664528.css.map": "/shopping-list/static/css/main.0c664528.css.map",
+    "main.b0251240.js.map": "/shopping-list/static/js/main.b0251240.js.map"
   },
   "entrypoints": [
-    "static/css/main.964fdded.css",
-    "static/js/main.02812822.js"
+    "static/css/main.0c664528.css",
+    "static/js/main.b0251240.js"
   ]
 }
