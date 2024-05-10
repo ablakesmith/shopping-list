@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function ShoppingForm({ addItem }) {
 
     const [item, setItem] = useState('');   
-    const [quantity, setQuantity] = useState(0); 
+    const [quantity, setQuantity] = useState(1); 
 
     function handleItemChange(event) {
         setItem(event.target.value);
