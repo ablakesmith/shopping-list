@@ -1,22 +1,22 @@
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
-  background-color: #f0f0f0; /* Light gray paper background */
-  padding: 20px; /* Add some padding around the content */
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
 }
 
 .notebook {
-  background-color: #fff; /* White notebook paper */
-  border: 1px solid #d9d9d9; /* Light gray border */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  padding: 20px; /* Add padding inside the notebook */
-  max-width: 800px; /* Limit the width for better readability */
-  margin: 0 auto; /* Center the notebook */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(217, 217, 217);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 h1 {
-  text-align: center; /* Center the heading */
-  color: #333; /* Dark gray color for headings */
+  text-align: center;
+  color: rgb(51, 51, 51);
 }
 
 p {
@@ -26,5 +26,5 @@ p {
 }
 
 .delete-button {
-  margin: 4px 5px; /* Add padding around the delete button */
+  margin: 4px 5px;
 }

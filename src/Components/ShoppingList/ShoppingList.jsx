@@ -8,13 +8,14 @@ function ShoppingItem({ id, item, quantity, deleteItem}) {
     }
 
     return (
-        <li>
-            <span>{item} ({quantity})</span> 
-            <button className="delete-button" onClick={() => deleteItem(item.id)}>Delete</button>
-        </li>
+        <div className="shopping-item">
+            <li>
+                <span>{item} ({quantity})</span> 
+                <button className="delete-button" onClick={handleDelete}>Delete</button>
+            </li>
+        </div>
     );
 }
-
 
 export default function ShoppingList({ items, deleteItem }) {
 

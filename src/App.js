@@ -9,40 +9,46 @@ function App() {
 
     function loadData() {
         fetch("https://9zdppw-8080.csb.app/api/list")
-            .then((x) => x.json())
-            .then((response) => {
-                setShoppingList(response);
-            });
+            .then((response) => response.json())
+            .then((data) => setShoppingList(data))
+            .catch((error) => console.log("Error loading data:", error));
     }
 
-    useEffect(loadData, []);
+    useEffect(() => {
+        loadData();
+    }, []);
 
     function addItem(item, quantity) {
         fetch("https://9zdppw-8080.csb.app/api/list/new", {
             method: "POST",
-            body: JSON.stringify({ item, quantity }),
             headers: {
-                "Content-type": "application/json; charset=UTF-8",
+                "Content-Type": "application/json",
             },
-            mode: "cors",
+            body: JSON.stringify({ item, quantity }),
         })
-            .then((x) => x.json())
-            .then(loadData);
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("Item added:", data);
+                loadData();
+            })
+            .catch((error) => console.log("Error adding item:", error));
     }
+
 
     function deleteItem(id) {
-        fetch("https://9zdppw-8080.csb.app/api/list/" + id, {
+        fetch(`https://9zdppw-8080.csb.app/api/list/${id}`, {
             method: "DELETE",
             headers: {
-                "Content-type": "application/json; charset=UTF-8",
+                "Content-Type": "application/json",
             },
-            mode: "cors",
         })
-            .then((x) => x.json())
-            .then(loadData);
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("Item deleted:", data);
+                loadData();
+            })
+            .catch((error) => console.log("Error deleting item:", error));
     }
-
-    // Add the provided code here
 
     return (
         <div className="App">

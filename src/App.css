@@ -1,7 +1,67 @@
-/* Updated styles for App component with notebook paper effect */
 .App {
-  text-align: left; /* Align text to the left for a handwritten note effect */
-  color: #333; /* Dark gray text color */
-  background-color: #fff; /* White background inside the notebook */
-  padding: 20px; /* Add padding inside the notebook */
+  text-align: left;
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 204);
+  padding: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+}
+
+.notebook {
+  background-color: rgb(255, 255, 204);
+  border: 1px solid rgb(217, 217, 217);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(51, 51, 51);
+  text-decoration: underline;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.delete-button {
+  margin: 4px 5px;
+}
+
+.shopping-item {
+  padding: 10px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  background-color: rgb(76, 175, 80);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(69, 160, 73);
 }
